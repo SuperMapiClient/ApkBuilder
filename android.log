@@ -1,0 +1,265 @@
+
+E:\360云盘\任务\3\APK_Builder>cd E:\360云盘\任务\3\APK_Builder 
+
+E:\360云盘\任务\3\APK_Builder>Xcopy www SuperPhone\assets\www /e /y 
+www\index.html
+复制了 1 个文件
+
+E:\360云盘\任务\3\APK_Builder>cd E:\360云盘\任务\3\APK_Builder/SuperPhone/ 
+
+E:\360云盘\任务\3\APK_Builder\SuperPhone>android update project --name NewName -t 1 -p ./ 
+Updated and renamed default.properties to project.properties
+Updated local.properties
+Added file E:\360云盘\任务\3\APK_Builder\SuperPhone\build.xml
+Added file E:\360云盘\任务\3\APK_Builder\SuperPhone\proguard-project.txt
+移动了         1 个文件。
+移动了         1 个文件。
+移动了         1 个文件。
+移动了         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+Buildfile: E:\360云盘\任务\3\APK_Builder\SuperPhone\build.xml
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+     [echo] proguard.config is ${proguard.config}
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 20
+ [checkenv] Installed at D:\android-sdk-windows
+
+-setup:
+     [echo] Project Name: NewName
+  [gettype] Project Type: Application
+     [echo] Switching between debug and non debug build: Deleting previous compilation output...
+
+-build-setup:
+     [echo] Resolving Build Target for NewName...
+[gettarget] Project Target:   Android 2.2
+[gettarget] API level:        8
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res
+    [mkdir] Created dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes
+     [echo] ----------
+     [echo] Resolving Dependencies for NewName...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'release'...
+   [subant] No sub-builds to iterate on
+
+-pre-build:
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 3 source files to E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] Converting compiled files and external libraries into E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes.dex...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\res
+   [crunch] To destination dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res
+   [crunch] Processing image to cache: E:\360云盘\任务\3\APK_Builder\SuperPhone\res\drawable-hdpi\ic_launcher.png => E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-hdpi\ic_launcher.png
+   [crunch]   (processed image to cache entry E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-hdpi\ic_launcher.png: 57% size of source)
+   [crunch] Processing image to cache: E:\360云盘\任务\3\APK_Builder\SuperPhone\res\drawable-hdpi\splash.png => E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-hdpi\splash.png
+   [crunch]   (processed image to cache entry E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-hdpi\splash.png: 75% size of source)
+   [crunch] Processing image to cache: E:\360云盘\任务\3\APK_Builder\SuperPhone\res\drawable-ldpi\ic_launcher.png => E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-ldpi\ic_launcher.png
+   [crunch]   (processed image to cache entry E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-ldpi\ic_launcher.png: 0% size of source)
+   [crunch] Processing image to cache: E:\360云盘\任务\3\APK_Builder\SuperPhone\res\drawable-mdpi\ic_launcher.png => E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-mdpi\ic_launcher.png
+   [crunch]   (processed image to cache entry E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-mdpi\ic_launcher.png: 0% size of source)
+   [crunch] Processing image to cache: E:\360云盘\任务\3\APK_Builder\SuperPhone\res\drawable-xhdpi\ic_launcher.png => E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-xhdpi\ic_launcher.png
+   [crunch]   (processed image to cache entry E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-xhdpi\ic_launcher.png: 74% size of source)
+   [crunch] Crunched 5 PNG files to update cache
+
+-package-resources:
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating NewName-release-unsigned.apk for release...
+
+-post-package:
+
+-release-prompt-for-password:
+
+-release-nosign:
+     [echo] No key.store and key.alias properties found in build.properties.
+     [echo] Please sign E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\NewName-release-unsigned.apk manually
+     [echo] and run zipalign from the Android SDK tools.
+[propertyfile] Creating new property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
+[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
+[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
+[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
+
+-release-sign:
+
+-post-build:
+
+release:
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+SuperPhone\bin\NewName-release-unsigned.apk
+复制了 1 个文件
+已复制         1 个文件。
+   正在添加： META-INF/MANIFEST.MF
+   正在添加： META-INF/ANDROID_.SF
+   正在添加： META-INF/ANDROID_.RSA
+  正在签名： assets/www/index.html
+  正在签名： res/layout/main.xml
+  正在签名： res/xml/cordova.xml
+  正在签名： res/xml/plugins.xml
+  正在签名： AndroidManifest.xml
+  正在签名： resources.arsc
+  正在签名： res/drawable-hdpi/ic_launcher.png
+  正在签名： res/drawable-hdpi/splash.png
+  正在签名： res/drawable-ldpi/ic_launcher.png
+  正在签名： res/drawable-mdpi/ic_launcher.png
+  正在签名： res/drawable-xhdpi/ic_launcher.png
+  正在签名： classes.dex
+移动了         1 个文件。
+移动了         1 个文件。
+移动了         1 个文件。
+移动了         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+Buildfile: E:\360云盘\任务\3\APK_Builder\SuperPhone\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 20
+ [checkenv] Installed at D:\android-sdk-windows
+
+-setup:
+     [echo] Project Name: NewName
+  [gettype] Project Type: Application
+     [echo] Switching between debug and non debug build: Deleting previous compilation output...
+   [delete] Deleting directory E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-build-setup:
+     [echo] Resolving Build Target for NewName...
+[gettarget] Project Target:   Android 2.2
+[gettarget] API level:        8
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes
+     [echo] ----------
+     [echo] Resolving Dependencies for NewName...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-pre-build:
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Build type changed: Generating new BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 3 source files to E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes.dex...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\res
+   [crunch] To destination dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [aapt] Current build type is different than previous build: forced aapt run.
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating NewName-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\NewName-debug.apk
+[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
+[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
+[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
+[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+SuperPhone\bin\NewName-debug-unaligned.apk
+SuperPhone\bin\NewName-debug.apk
+SuperPhone\bin\NewName-release-unsigned.apk
+复制了 3 个文件
+移动了         1 个文件。
+移动了         1 个文件。
+移动了         1 个文件。
+移动了         1 个文件。

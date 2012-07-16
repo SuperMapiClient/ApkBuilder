@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>APK打包工具专题</title>
+        <link href='./css/style.css' rel='stylesheet' />
+    </head>
+    <body data-spy="scroll" data-target=".subnav" data-offset="50">
+        <div id='container' class='container'>
+            <div class='page-header'>
+                <h1 style="margin-top: 2%">SuperMap iClient for JavaScript APK打包工具</h1>
+                <hr />
+                <h2>一、简介</h2>
+                <p>
+                &nbsp;使用这个工具可以经过简单的配置生成apk文件，进而在Android系统上安装运行。
+                </p>
+                <h2>二、使用说明</h2>
+                <p>&nbsp;首先将网站拷贝到www文件夹中，要求有index.html文件作为网站的起始页。
+                </p>
+                <p>&nbsp;然后双击builder.bat文件，把网站打包成apk文件。
+                </p>  
+                <p>&nbsp;文档结构如下：
+                </p>
+                <div class="pageImage"><img src="img/1.png" style="width:100%;"></div>    
+                <h3>2.1、自定义签名</h3>
+                <p>要想使Android应用程序在真机上运行，需要对apk（Android应用程序的执行文件，
+                相当于Symbian程序的sis/sisx或Java ME程序的jar文件）文件进行签名。可以通过命
+                令行或ADT插件方式对apk文件进行签名。
+                </p>
+                <p>
+                (1).使用keytool生成专用密钥（Private Key）文件。
+                </p>
+                <p>
+                其中androidguy-release.keystore表示要生成的密钥文件名，可以是任意合法的文件名。
+                androidguy表示密钥的别名，<strong>注意本工具要求用户的密钥文件名与密钥的别名相同，
+                </strong>也就是需要把androidguy改成androidguy-release.keystore后面对apk文
+                件签名时需要用到。RSA表示密钥算法。30000表示签名的有效天数。在执行上面的命令后，需要
+                输入一系列的信息。这些信息可以任意输入，但一般需要输入一些有意义的信息。
+                </p>
+<pre>
+keytool -genkey -v -keystore androidguy-release.keystore -alias androidguy -keyalg RSA -validity 30000
+</pre>
+                <p>
+                (2).以下是作者输入的信息作为参考。
+                </p>
+                <p>
+                在输入完上面的信息后，在当前目录下会生成一个androidguy-release.keystore文件。这个文件就是专用密钥文件。
+                <strong>注意将该文件与批处理文件放在一起。</strong>
+                </p>
+<pre>
+输入keystore密码：  
+再次输入新密码:  
+您的名字与姓氏是什么？  
+  [Unknown]：  iClient
+您的组织单位名称是什么？  
+  [Unknown]：  supermap
+您的组织名称是什么？  
+  [Unknown]：  supermap  
+您所在的城市或区域名称是什么？  
+  [Unknown]：  chengdu  
+您所在的州或省份名称是什么？  
+  [Unknown]：  sichuan  
+该单位的两字母国家代码是什么？  
+  [Unknown]：  CN  
+CN=li, OU=supermap, O=supermap, L=chengdu, ST=sichuan, C=CN 正确吗？  
+  [否]：  Y  
+正在为以下对象生成 1,024 位 RSA 密钥对和自签名证书(SHA1withRSA)（有效期为 30,000 天）:  
+         CN=li, OU=supermap, O=supermap, L=chengdu, ST=sichuan, C=CN
+输入<androidguy>的主密码  
+        （如果和 keystore 密码相同，按回车）：  
+[正在存储 androidguy-release.keystore] 
+</pre>
+                <p>
+                (3). 此时再次双击builder.bat文件，此间会要求输入密码，输入你证书的密码即可，得到的就是NewName-release.apk文件，可以用于安装在android系统上
+                </p>
+                <p>显示效果图如下所示：</P> 
+                <div class="pageImage"> <img src="img/3.png" style="width:100%;"></div>            
+                <h3>2.2更换图标</h3>
+                <p>更改图标的操作十分简单，只需要你将四种分辨率的图标分别放到Custom_ICO文件夹中的四个文件夹中即可。
+               <strong>注意图标的名字必须是ic_launcher.png且必须为png格式的图标。</strong>
+               然后双击builder.bat文件，生成以后的apk文件安装后显示的图标既是用户自定义的图标
+                </p>
+               <div class="pageImage"> <img src="img/4.png" style="width:100%;"></div>        
+
+                <h2>三、系统要求</h2>
+                <p>
+                工具要求系统搭建了java、Android和Ant环境，需要配置环境变量,这里需要注意的就是不要使用JDK1.7的版本，因为由于不兼容打成的apk文件可能无法使用
+                </p>
+                <pre>
+C:\Program Files (x86)\Java\jdk1.6.0_10\bin;D:\android-sdk-windows\tools;D:\apache-ant-1.8.4\bin
+                </pre>
+               
+                </p>
+            </div>
+            <div class='footer'>
+                <p>版权所有&nbsp;&copy; 1997-2012. &nbsp;北京超图软件股份有限公司</p>
+            </div>
+        </div>
+    </body>
+</html>
