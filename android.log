@@ -3,7 +3,53 @@ E:\360云盘\任务\3\APK_Builder>cd E:\360云盘\任务\3\APK_Builder
 
 E:\360云盘\任务\3\APK_Builder>Xcopy www SuperPhone\assets\www /e /y 
 www\index.html
-复制了 1 个文件
+www\css\cloudFrame.css
+www\images\ajax-loader.png
+www\images\icons-18-white.png
+www\images\logo.png
+www\images\mark.png
+www\images\mark2.png
+www\js\common.js
+www\js\cordova-1.7.0.js
+www\js\frame.js
+www\js\jquery.js
+www\js\localstorageplugin.js
+www\js\LocationControl.js
+www\js\MeasureDistanceForCloud.js
+www\js\QueryForCloudService.js
+www\js\ShotScreenControl.js
+www\js\SuperMap.Include.js
+www\js\SuperMap.js
+www\resource\controlImages\blank.gif
+www\resource\controlImages\close.gif
+www\resource\controlImages\cloud-popup-relative.png
+www\resource\controlImages\east-mini.png
+www\resource\controlImages\layer-switcher-maximize.png
+www\resource\controlImages\layer-switcher-minimize.png
+www\resource\controlImages\marker-gold.png
+www\resource\controlImages\marker.png
+www\resource\controlImages\minimize.png
+www\resource\controlImages\north-mini.png
+www\resource\controlImages\overView.png
+www\resource\controlImages\slider.png
+www\resource\controlImages\south-mini.png
+www\resource\controlImages\west-mini.png
+www\resource\controlImages\zoom-maxextent-mini.png
+www\resource\controlImages\zoom-maxextent-mini_one.png
+www\resource\controlImages\zoom-minus-mini.png
+www\resource\controlImages\zoom-plus-mini.png
+www\resource\controlImages\zoombar.png
+www\resource\controlImages\zoombar_center.png
+www\resource\controlImages\zoombar_glide.png
+www\resource\controlImages\zoom_city.png
+www\resource\controlImages\zoom_country.png
+www\resource\controlImages\zoom_province.png
+www\resource\controlImages\zoom_street.png
+www\resource\theme\default\framedCloud.css
+www\resource\theme\default\google.css
+www\resource\theme\default\ie6-style.css
+www\resource\theme\default\style.css
+复制了 47 个文件
 
 E:\360云盘\任务\3\APK_Builder>cd E:\360云盘\任务\3\APK_Builder/SuperPhone/ 
 
@@ -12,14 +58,6 @@ Updated and renamed default.properties to project.properties
 Updated local.properties
 Added file E:\360云盘\任务\3\APK_Builder\SuperPhone\build.xml
 Added file E:\360云盘\任务\3\APK_Builder\SuperPhone\proguard-project.txt
-移动了         1 个文件。
-移动了         1 个文件。
-移动了         1 个文件。
-移动了         1 个文件。
-已复制         1 个文件。
-已复制         1 个文件。
-已复制         1 个文件。
-已复制         1 个文件。
 Buildfile: E:\360云盘\任务\3\APK_Builder\SuperPhone\build.xml
 
 -set-mode-check:
@@ -129,13 +167,59 @@ Buildfile: E:\360云盘\任务\3\APK_Builder\SuperPhone\build.xml
 release:
 
 BUILD SUCCESSFUL
-Total time: 6 seconds
+Total time: 7 seconds
 SuperPhone\bin\NewName-release-unsigned.apk
 复制了 1 个文件
 已复制         1 个文件。
    正在添加： META-INF/MANIFEST.MF
    正在添加： META-INF/ANDROID_.SF
    正在添加： META-INF/ANDROID_.RSA
+  正在签名： assets/www/css/cloudFrame.css
+  正在签名： assets/www/images/ajax-loader.png
+  正在签名： assets/www/images/icons-18-white.png
+  正在签名： assets/www/images/logo.png
+  正在签名： assets/www/images/mark.png
+  正在签名： assets/www/images/mark2.png
+  正在签名： assets/www/js/LocationControl.js
+  正在签名： assets/www/js/MeasureDistanceForCloud.js
+  正在签名： assets/www/js/QueryForCloudService.js
+  正在签名： assets/www/js/ShotScreenControl.js
+  正在签名： assets/www/js/SuperMap.Include.js
+  正在签名： assets/www/js/SuperMap.js
+  正在签名： assets/www/js/common.js
+  正在签名： assets/www/js/cordova-1.7.0.js
+  正在签名： assets/www/js/frame.js
+  正在签名： assets/www/js/jquery.js
+  正在签名： assets/www/js/localstorageplugin.js
+  正在签名： assets/www/resource/controlImages/blank.gif
+  正在签名： assets/www/resource/controlImages/close.gif
+  正在签名： assets/www/resource/controlImages/cloud-popup-relative.png
+  正在签名： assets/www/resource/controlImages/east-mini.png
+  正在签名： assets/www/resource/controlImages/layer-switcher-maximize.png
+  正在签名： assets/www/resource/controlImages/layer-switcher-minimize.png
+  正在签名： assets/www/resource/controlImages/marker-gold.png
+  正在签名： assets/www/resource/controlImages/marker.png
+  正在签名： assets/www/resource/controlImages/minimize.png
+  正在签名： assets/www/resource/controlImages/north-mini.png
+  正在签名： assets/www/resource/controlImages/overView.png
+  正在签名： assets/www/resource/controlImages/slider.png
+  正在签名： assets/www/resource/controlImages/south-mini.png
+  正在签名： assets/www/resource/controlImages/west-mini.png
+  正在签名： assets/www/resource/controlImages/zoom-maxextent-mini.png
+  正在签名： assets/www/resource/controlImages/zoom-maxextent-mini_one.png
+  正在签名： assets/www/resource/controlImages/zoom-minus-mini.png
+  正在签名： assets/www/resource/controlImages/zoom-plus-mini.png
+  正在签名： assets/www/resource/controlImages/zoom_city.png
+  正在签名： assets/www/resource/controlImages/zoom_country.png
+  正在签名： assets/www/resource/controlImages/zoom_province.png
+  正在签名： assets/www/resource/controlImages/zoom_street.png
+  正在签名： assets/www/resource/controlImages/zoombar.png
+  正在签名： assets/www/resource/controlImages/zoombar_center.png
+  正在签名： assets/www/resource/controlImages/zoombar_glide.png
+  正在签名： assets/www/resource/theme/default/framedCloud.css
+  正在签名： assets/www/resource/theme/default/google.css
+  正在签名： assets/www/resource/theme/default/ie6-style.css
+  正在签名： assets/www/resource/theme/default/style.css
   正在签名： assets/www/index.html
   正在签名： res/layout/main.xml
   正在签名： res/xml/cordova.xml
@@ -148,14 +232,6 @@ SuperPhone\bin\NewName-release-unsigned.apk
   正在签名： res/drawable-mdpi/ic_launcher.png
   正在签名： res/drawable-xhdpi/ic_launcher.png
   正在签名： classes.dex
-移动了         1 个文件。
-移动了         1 个文件。
-移动了         1 个文件。
-移动了         1 个文件。
-已复制         1 个文件。
-已复制         1 个文件。
-已复制         1 个文件。
-已复制         1 个文件。
 Buildfile: E:\360云盘\任务\3\APK_Builder\SuperPhone\build.xml
 
 -set-mode-check:

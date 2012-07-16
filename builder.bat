@@ -8,6 +8,9 @@
 
 cd %curdir%
 
+call ./ImgMoveOut.bat
+call ./ImgCopyIn.bat
+
 IF EXIST *.keystore (
 dir *.keystore /b > keystore.tmp
 call ./makeRelease.bat >>android.log

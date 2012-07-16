@@ -1,3 +1,4 @@
+@set curdir=%cd%
 cd %curdir%
 
 move SuperPhone\res\drawable-hdpi\ic_launcher.png APP_ICO_BAK\drawable-hdpi\ic_launcher.png

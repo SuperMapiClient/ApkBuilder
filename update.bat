@@ -1,3 +1,4 @@
+@set curdir=%cd%
 cd %curdir%
 Xcopy www SuperPhone\assets\www /e /y
 cd %curdir%/SuperPhone/
