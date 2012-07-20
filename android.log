@@ -1,98 +1,62 @@
 
-E:\360云盘\任务\3\APK_Builder>cd E:\360云盘\任务\3\APK_Builder 
+E:\ApkBuilder\ApkBuilder>cd E:\ApkBuilder\ApkBuilder 
 
-E:\360云盘\任务\3\APK_Builder>Xcopy www SuperPhone\assets\www /e /y 
-www\index.html
-www\css\cloudFrame.css
-www\images\ajax-loader.png
-www\images\icons-18-white.png
-www\images\logo.png
-www\images\mark.png
-www\images\mark2.png
-www\js\common.js
-www\js\cordova-1.7.0.js
-www\js\frame.js
-www\js\jquery.js
-www\js\localstorageplugin.js
-www\js\LocationControl.js
-www\js\MeasureDistanceForCloud.js
-www\js\QueryForCloudService.js
-www\js\ShotScreenControl.js
-www\js\SuperMap.Include.js
-www\js\SuperMap.js
-www\resource\controlImages\blank.gif
-www\resource\controlImages\close.gif
-www\resource\controlImages\cloud-popup-relative.png
-www\resource\controlImages\east-mini.png
-www\resource\controlImages\layer-switcher-maximize.png
-www\resource\controlImages\layer-switcher-minimize.png
-www\resource\controlImages\marker-gold.png
-www\resource\controlImages\marker.png
-www\resource\controlImages\minimize.png
-www\resource\controlImages\north-mini.png
-www\resource\controlImages\overView.png
-www\resource\controlImages\slider.png
-www\resource\controlImages\south-mini.png
-www\resource\controlImages\west-mini.png
-www\resource\controlImages\zoom-maxextent-mini.png
-www\resource\controlImages\zoom-maxextent-mini_one.png
-www\resource\controlImages\zoom-minus-mini.png
-www\resource\controlImages\zoom-plus-mini.png
-www\resource\controlImages\zoombar.png
-www\resource\controlImages\zoombar_center.png
-www\resource\controlImages\zoombar_glide.png
-www\resource\controlImages\zoom_city.png
-www\resource\controlImages\zoom_country.png
-www\resource\controlImages\zoom_province.png
-www\resource\controlImages\zoom_street.png
-www\resource\theme\default\framedCloud.css
-www\resource\theme\default\google.css
-www\resource\theme\default\ie6-style.css
-www\resource\theme\default\style.css
-复制了 47 个文件
+E:\ApkBuilder\ApkBuilder>Xcopy C:\Users\Administrator\Desktop\CSS3 SuperPhone\assets\www /e /y 
+C:\Users\Administrator\Desktop\CSS3\futurama1.jpg
+C:\Users\Administrator\Desktop\CSS3\futurama2.jpg
+C:\Users\Administrator\Desktop\CSS3\index.html
+C:\Users\Administrator\Desktop\CSS3\wallpaper2.jpg
+复制了 4 个文件
 
-E:\360云盘\任务\3\APK_Builder>cd E:\360云盘\任务\3\APK_Builder/SuperPhone/ 
+E:\ApkBuilder\ApkBuilder>cd E:\ApkBuilder\ApkBuilder/SuperPhone/ 
 
-E:\360云盘\任务\3\APK_Builder\SuperPhone>android update project --name NewName -t 1 -p ./ 
+E:\ApkBuilder\ApkBuilder\SuperPhone>android update project --name SuperPhone -t 1 -p ./ 
 Updated and renamed default.properties to project.properties
 Updated local.properties
-Added file E:\360云盘\任务\3\APK_Builder\SuperPhone\build.xml
-Added file E:\360云盘\任务\3\APK_Builder\SuperPhone\proguard-project.txt
-Buildfile: E:\360云盘\任务\3\APK_Builder\SuperPhone\build.xml
+Added file E:\ApkBuilder\ApkBuilder\SuperPhone\build.xml
+Added file E:\ApkBuilder\ApkBuilder\SuperPhone\proguard-project.txt
+
+E:\ApkBuilder\ApkBuilder>cd E:\ApkBuilder\ApkBuilder 
+
+E:\ApkBuilder\ApkBuilder>cd E:\ApkBuilder\ApkBuilder/SuperPhone 
+
+E:\ApkBuilder\ApkBuilder\SuperPhone>ant debug 
+Buildfile: E:\ApkBuilder\ApkBuilder\SuperPhone\build.xml
 
 -set-mode-check:
 
--set-release-mode:
-
--release-obfuscation-check:
-     [echo] proguard.config is ${proguard.config}
+-set-debug-files:
 
 -check-env:
  [checkenv] Android SDK Tools Revision 20
  [checkenv] Installed at D:\android-sdk-windows
 
 -setup:
-     [echo] Project Name: NewName
+     [echo] Project Name: SuperPhone
   [gettype] Project Type: Application
      [echo] Switching between debug and non debug build: Deleting previous compilation output...
 
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
 -build-setup:
-     [echo] Resolving Build Target for NewName...
+     [echo] Resolving Build Target for SuperPhone...
 [gettarget] Project Target:   Android 2.2
 [gettarget] API level:        8
      [echo] ----------
      [echo] Creating output directories if needed...
-    [mkdir] Created dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res
-    [mkdir] Created dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes
+    [mkdir] Created dir: E:\ApkBuilder\ApkBuilder\SuperPhone\bin\res
+    [mkdir] Created dir: E:\ApkBuilder\ApkBuilder\SuperPhone\bin\classes
      [echo] ----------
-     [echo] Resolving Dependencies for NewName...
+     [echo] Resolving Dependencies for SuperPhone...
 [dependency] Library dependencies:
 [dependency] No Libraries
 [dependency] 
 [dependency] ------------------
 [dependency] API<=15: Adding annotations.jar to the classpath.
      [echo] ----------
-     [echo] Building Libraries with 'release'...
+     [echo] Building Libraries with 'debug'...
    [subant] No sub-builds to iterate on
 
 -pre-build:
@@ -116,28 +80,28 @@ Buildfile: E:\360云盘\任务\3\APK_Builder\SuperPhone\build.xml
 -pre-compile:
 
 -compile:
-    [javac] Compiling 3 source files to E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes
+    [javac] Compiling 3 source files to E:\ApkBuilder\ApkBuilder\SuperPhone\bin\classes
 
 -post-compile:
 
 -obfuscate:
 
 -dex:
-      [dex] Converting compiled files and external libraries into E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes.dex...
+      [dex] Converting compiled files and external libraries into E:\ApkBuilder\ApkBuilder\SuperPhone\bin\classes.dex...
 
 -crunch:
-   [crunch] Crunching PNG Files in source dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\res
-   [crunch] To destination dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res
-   [crunch] Processing image to cache: E:\360云盘\任务\3\APK_Builder\SuperPhone\res\drawable-hdpi\ic_launcher.png => E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-hdpi\ic_launcher.png
-   [crunch]   (processed image to cache entry E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-hdpi\ic_launcher.png: 57% size of source)
-   [crunch] Processing image to cache: E:\360云盘\任务\3\APK_Builder\SuperPhone\res\drawable-hdpi\splash.png => E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-hdpi\splash.png
-   [crunch]   (processed image to cache entry E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-hdpi\splash.png: 75% size of source)
-   [crunch] Processing image to cache: E:\360云盘\任务\3\APK_Builder\SuperPhone\res\drawable-ldpi\ic_launcher.png => E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-ldpi\ic_launcher.png
-   [crunch]   (processed image to cache entry E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-ldpi\ic_launcher.png: 0% size of source)
-   [crunch] Processing image to cache: E:\360云盘\任务\3\APK_Builder\SuperPhone\res\drawable-mdpi\ic_launcher.png => E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-mdpi\ic_launcher.png
-   [crunch]   (processed image to cache entry E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-mdpi\ic_launcher.png: 0% size of source)
-   [crunch] Processing image to cache: E:\360云盘\任务\3\APK_Builder\SuperPhone\res\drawable-xhdpi\ic_launcher.png => E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-xhdpi\ic_launcher.png
-   [crunch]   (processed image to cache entry E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res\drawable-xhdpi\ic_launcher.png: 74% size of source)
+   [crunch] Crunching PNG Files in source dir: E:\ApkBuilder\ApkBuilder\SuperPhone\res
+   [crunch] To destination dir: E:\ApkBuilder\ApkBuilder\SuperPhone\bin\res
+   [crunch] Processing image to cache: E:\ApkBuilder\ApkBuilder\SuperPhone\res\drawable-hdpi\ic_launcher.png => E:\ApkBuilder\ApkBuilder\SuperPhone\bin\res\drawable-hdpi\ic_launcher.png
+   [crunch]   (processed image to cache entry E:\ApkBuilder\ApkBuilder\SuperPhone\bin\res\drawable-hdpi\ic_launcher.png: 57% size of source)
+   [crunch] Processing image to cache: E:\ApkBuilder\ApkBuilder\SuperPhone\res\drawable-hdpi\splash.png => E:\ApkBuilder\ApkBuilder\SuperPhone\bin\res\drawable-hdpi\splash.png
+   [crunch]   (processed image to cache entry E:\ApkBuilder\ApkBuilder\SuperPhone\bin\res\drawable-hdpi\splash.png: 75% size of source)
+   [crunch] Processing image to cache: E:\ApkBuilder\ApkBuilder\SuperPhone\res\drawable-ldpi\ic_launcher.png => E:\ApkBuilder\ApkBuilder\SuperPhone\bin\res\drawable-ldpi\ic_launcher.png
+   [crunch]   (processed image to cache entry E:\ApkBuilder\ApkBuilder\SuperPhone\bin\res\drawable-ldpi\ic_launcher.png: 0% size of source)
+   [crunch] Processing image to cache: E:\ApkBuilder\ApkBuilder\SuperPhone\res\drawable-mdpi\ic_launcher.png => E:\ApkBuilder\ApkBuilder\SuperPhone\bin\res\drawable-mdpi\ic_launcher.png
+   [crunch]   (processed image to cache entry E:\ApkBuilder\ApkBuilder\SuperPhone\bin\res\drawable-mdpi\ic_launcher.png: 0% size of source)
+   [crunch] Processing image to cache: E:\ApkBuilder\ApkBuilder\SuperPhone\res\drawable-xhdpi\ic_launcher.png => E:\ApkBuilder\ApkBuilder\SuperPhone\bin\res\drawable-xhdpi\ic_launcher.png
+   [crunch]   (processed image to cache entry E:\ApkBuilder\ApkBuilder\SuperPhone\bin\res\drawable-xhdpi\ic_launcher.png: 74% size of source)
    [crunch] Crunched 5 PNG files to update cache
 
 -package-resources:
@@ -145,185 +109,17 @@ Buildfile: E:\360云盘\任务\3\APK_Builder\SuperPhone\build.xml
 
 -package:
 [apkbuilder] Current build type is different than previous build: forced apkbuilder run.
-[apkbuilder] Creating NewName-release-unsigned.apk for release...
-
--post-package:
-
--release-prompt-for-password:
-
--release-nosign:
-     [echo] No key.store and key.alias properties found in build.properties.
-     [echo] Please sign E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\NewName-release-unsigned.apk manually
-     [echo] and run zipalign from the Android SDK tools.
-[propertyfile] Creating new property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
-[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
-[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
-[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
-
--release-sign:
-
--post-build:
-
-release:
-
-BUILD SUCCESSFUL
-Total time: 7 seconds
-SuperPhone\bin\NewName-release-unsigned.apk
-复制了 1 个文件
-已复制         1 个文件。
-   正在添加： META-INF/MANIFEST.MF
-   正在添加： META-INF/ANDROID_.SF
-   正在添加： META-INF/ANDROID_.RSA
-  正在签名： assets/www/css/cloudFrame.css
-  正在签名： assets/www/images/ajax-loader.png
-  正在签名： assets/www/images/icons-18-white.png
-  正在签名： assets/www/images/logo.png
-  正在签名： assets/www/images/mark.png
-  正在签名： assets/www/images/mark2.png
-  正在签名： assets/www/js/LocationControl.js
-  正在签名： assets/www/js/MeasureDistanceForCloud.js
-  正在签名： assets/www/js/QueryForCloudService.js
-  正在签名： assets/www/js/ShotScreenControl.js
-  正在签名： assets/www/js/SuperMap.Include.js
-  正在签名： assets/www/js/SuperMap.js
-  正在签名： assets/www/js/common.js
-  正在签名： assets/www/js/cordova-1.7.0.js
-  正在签名： assets/www/js/frame.js
-  正在签名： assets/www/js/jquery.js
-  正在签名： assets/www/js/localstorageplugin.js
-  正在签名： assets/www/resource/controlImages/blank.gif
-  正在签名： assets/www/resource/controlImages/close.gif
-  正在签名： assets/www/resource/controlImages/cloud-popup-relative.png
-  正在签名： assets/www/resource/controlImages/east-mini.png
-  正在签名： assets/www/resource/controlImages/layer-switcher-maximize.png
-  正在签名： assets/www/resource/controlImages/layer-switcher-minimize.png
-  正在签名： assets/www/resource/controlImages/marker-gold.png
-  正在签名： assets/www/resource/controlImages/marker.png
-  正在签名： assets/www/resource/controlImages/minimize.png
-  正在签名： assets/www/resource/controlImages/north-mini.png
-  正在签名： assets/www/resource/controlImages/overView.png
-  正在签名： assets/www/resource/controlImages/slider.png
-  正在签名： assets/www/resource/controlImages/south-mini.png
-  正在签名： assets/www/resource/controlImages/west-mini.png
-  正在签名： assets/www/resource/controlImages/zoom-maxextent-mini.png
-  正在签名： assets/www/resource/controlImages/zoom-maxextent-mini_one.png
-  正在签名： assets/www/resource/controlImages/zoom-minus-mini.png
-  正在签名： assets/www/resource/controlImages/zoom-plus-mini.png
-  正在签名： assets/www/resource/controlImages/zoom_city.png
-  正在签名： assets/www/resource/controlImages/zoom_country.png
-  正在签名： assets/www/resource/controlImages/zoom_province.png
-  正在签名： assets/www/resource/controlImages/zoom_street.png
-  正在签名： assets/www/resource/controlImages/zoombar.png
-  正在签名： assets/www/resource/controlImages/zoombar_center.png
-  正在签名： assets/www/resource/controlImages/zoombar_glide.png
-  正在签名： assets/www/resource/theme/default/framedCloud.css
-  正在签名： assets/www/resource/theme/default/google.css
-  正在签名： assets/www/resource/theme/default/ie6-style.css
-  正在签名： assets/www/resource/theme/default/style.css
-  正在签名： assets/www/index.html
-  正在签名： res/layout/main.xml
-  正在签名： res/xml/cordova.xml
-  正在签名： res/xml/plugins.xml
-  正在签名： AndroidManifest.xml
-  正在签名： resources.arsc
-  正在签名： res/drawable-hdpi/ic_launcher.png
-  正在签名： res/drawable-hdpi/splash.png
-  正在签名： res/drawable-ldpi/ic_launcher.png
-  正在签名： res/drawable-mdpi/ic_launcher.png
-  正在签名： res/drawable-xhdpi/ic_launcher.png
-  正在签名： classes.dex
-Buildfile: E:\360云盘\任务\3\APK_Builder\SuperPhone\build.xml
-
--set-mode-check:
-
--set-debug-files:
-
--check-env:
- [checkenv] Android SDK Tools Revision 20
- [checkenv] Installed at D:\android-sdk-windows
-
--setup:
-     [echo] Project Name: NewName
-  [gettype] Project Type: Application
-     [echo] Switching between debug and non debug build: Deleting previous compilation output...
-   [delete] Deleting directory E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes
-
--set-debug-mode:
-
--debug-obfuscation-check:
-
--build-setup:
-     [echo] Resolving Build Target for NewName...
-[gettarget] Project Target:   Android 2.2
-[gettarget] API level:        8
-     [echo] ----------
-     [echo] Creating output directories if needed...
-    [mkdir] Created dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes
-     [echo] ----------
-     [echo] Resolving Dependencies for NewName...
-[dependency] Library dependencies:
-[dependency] No Libraries
-[dependency] 
-[dependency] ------------------
-[dependency] API<=15: Adding annotations.jar to the classpath.
-     [echo] ----------
-     [echo] Building Libraries with 'debug'...
-   [subant] No sub-builds to iterate on
-
--pre-build:
-
--code-gen:
-[mergemanifest] Found Deleted Target File
-[mergemanifest] Merging AndroidManifest files into one.
-[mergemanifest] Manifest merger disabled. Using project manifest only.
-     [echo] Handling aidl files...
-     [aidl] No AIDL files to compile.
-     [echo] ----------
-     [echo] Handling RenderScript files...
-[renderscript] No RenderScript files to compile.
-     [echo] ----------
-     [echo] Handling Resources...
-     [aapt] Found Deleted Target File
-     [aapt] Generating resource IDs...
-     [echo] ----------
-     [echo] Handling BuildConfig class...
-[buildconfig] Build type changed: Generating new BuildConfig class.
-
--pre-compile:
-
--compile:
-    [javac] Compiling 3 source files to E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes
-
--post-compile:
-
--obfuscate:
-
--dex:
-      [dex] Found Deleted Target File
-      [dex] Converting compiled files and external libraries into E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\classes.dex...
-
--crunch:
-   [crunch] Crunching PNG Files in source dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\res
-   [crunch] To destination dir: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\res
-   [crunch] Crunched 0 PNG files to update cache
-
--package-resources:
-     [aapt] Current build type is different than previous build: forced aapt run.
-     [aapt] Creating full resource package...
-
--package:
-[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
-[apkbuilder] Creating NewName-debug-unaligned.apk and signing it with a debug key...
+[apkbuilder] Creating SuperPhone-debug-unaligned.apk and signing it with a debug key...
 
 -post-package:
 
 -do-debug:
  [zipalign] Running zip align on final apk...
-     [echo] Debug Package: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\NewName-debug.apk
-[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
-[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
-[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
-[propertyfile] Updating property file: E:\360云盘\任务\3\APK_Builder\SuperPhone\bin\build.prop
+     [echo] Debug Package: E:\ApkBuilder\ApkBuilder\SuperPhone\bin\SuperPhone-debug.apk
+[propertyfile] Creating new property file: E:\ApkBuilder\ApkBuilder\SuperPhone\bin\build.prop
+[propertyfile] Updating property file: E:\ApkBuilder\ApkBuilder\SuperPhone\bin\build.prop
+[propertyfile] Updating property file: E:\ApkBuilder\ApkBuilder\SuperPhone\bin\build.prop
+[propertyfile] Updating property file: E:\ApkBuilder\ApkBuilder\SuperPhone\bin\build.prop
 
 -post-build:
 
@@ -331,11 +127,49 @@ debug:
 
 BUILD SUCCESSFUL
 Total time: 7 seconds
-SuperPhone\bin\NewName-debug-unaligned.apk
-SuperPhone\bin\NewName-debug.apk
-SuperPhone\bin\NewName-release-unsigned.apk
-复制了 3 个文件
+SuperPhone\bin\SuperPhone-debug-unaligned.apk
+SuperPhone\bin\SuperPhone-debug.apk
+复制了 2 个文件
+
+E:\ApkBuilder\ApkBuilder>cd E:\ApkBuilder\ApkBuilder 
+
+E:\ApkBuilder\ApkBuilder>rmdir /s/q SuperPhone\bin\ 
+
+E:\ApkBuilder\ApkBuilder>rmdir /s/q SuperPhone\assets\www\ 
+
+E:\ApkBuilder\ApkBuilder>md SuperPhone\bin\ 
+
+E:\ApkBuilder\ApkBuilder>md SuperPhone\assets\www\ 
+
+E:\ApkBuilder\ApkBuilder>del SuperPhone\project.properties 
+
+E:\ApkBuilder\ApkBuilder>del SuperPhone\proguard-project.txt 
+
+E:\ApkBuilder\ApkBuilder>del SuperPhone\local.properties 
+
+E:\ApkBuilder\ApkBuilder>del SuperPhone\build.xml 
+
+E:\ApkBuilder\ApkBuilder>cd E:\ApkBuilder\ApkBuilder 
+
+E:\ApkBuilder\ApkBuilder>del SuperPhone-debug-unaligned.apk 
+
+E:\ApkBuilder\ApkBuilder>del SuperPhone-release-unsigned.apk 
+
+E:\ApkBuilder\ApkBuilder>move SuperPhone-debug.apk C:\Users\Administrator\Desktop 
 移动了         1 个文件。
+
+E:\ApkBuilder\ApkBuilder>move SuperPhone-release.apk C:\Users\Administrator\Desktop 
+
+E:\ApkBuilder\ApkBuilder>cd E:\ApkBuilder\ApkBuilder 
+
+E:\ApkBuilder\ApkBuilder>move /y APP_ICO_BAK\drawable-hdpi\ic_launcher.png SuperPhone\res\drawable-hdpi\ic_launcher.png 
 移动了         1 个文件。
+
+E:\ApkBuilder\ApkBuilder>move /y APP_ICO_BAK\drawable-ldpi\ic_launcher.png SuperPhone\res\drawable-ldpi\ic_launcher.png 
 移动了         1 个文件。
+
+E:\ApkBuilder\ApkBuilder>move /y APP_ICO_BAK\drawable-mdpi\ic_launcher.png SuperPhone\res\drawable-mdpi\ic_launcher.png 
+移动了         1 个文件。
+
+E:\ApkBuilder\ApkBuilder>move /y APP_ICO_BAK\drawable-xhdpi\ic_launcher.png SuperPhone\res\drawable-xhdpi\ic_launcher.png 
 移动了         1 个文件。

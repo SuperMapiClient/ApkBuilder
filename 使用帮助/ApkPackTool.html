@@ -12,16 +12,20 @@
                 <hr />
                 <h2>一、简介</h2>
                 <p>
-                &nbsp;使用这个工具可以经过简单的配置生成apk文件，进而在Android系统上安装运行。
+                使用这个工具可以检测当前环境是否符合编译条件，系统环境检测成功以后进入工具主界面，再经过简单的配置可以
+                生成灵活生成apk文件，进而在Android系统上安装运行。
                 </p>
                 <h2>二、使用说明</h2>
-                <p>&nbsp;首先将网站拷贝到www文件夹中，要求有index.html文件作为网站的起始页。
+                <p>文件结构如下：
                 </p>
-                <p>&nbsp;然后双击builder.bat文件，把网站打包成apk文件。
+                <div class="pageImage"><img src="img/1.png" style="width:100%;"></div>  
+                <p>双击ApkBuilder.exe文件开始检测用户环境，查看是否符合编译条件，环境符合后进入主功能界面。
                 </p>  
-                <p>&nbsp;文档结构如下：
-                </p>
-                <div class="pageImage"><img src="img/1.png" style="width:100%;"></div>    
+                <p>主界面有一系列操作指导，可以帮助你快速构建自己的Apk应用
+                </p> 
+                 <div class="pageImage"><img src="img/5.png"></div>    
+                <p>然后单击“生成Apk文件”按钮即可生成Apk文件</p>
+                 <div class="pageImage"><img src="img/6.png"></div>    
                 <h3>2.1、自定义签名</h3>
                 <p>要想使Android应用程序在真机上运行，需要对apk（Android应用程序的执行文件，
                 相当于Symbian程序的sis/sisx或Java ME程序的jar文件）文件进行签名。可以通过命
@@ -33,12 +37,16 @@
                 <p>
                 其中androidguy-release.keystore表示要生成的密钥文件名，可以是任意合法的文件名。
                 androidguy表示密钥的别名，<strong>注意本工具要求用户的密钥文件名与密钥的别名相同，
-                </strong>也就是需要把androidguy改成androidguy-release.keystore后面对apk文
+                </strong>也就是需要把androidguy改成androidguy-release.keystore，后面对apk文
                 件签名时需要用到。RSA表示密钥算法。30000表示签名的有效天数。在执行上面的命令后，需要
                 输入一系列的信息。这些信息可以任意输入，但一般需要输入一些有意义的信息。
                 </p>
 <pre>
 keytool -genkey -v -keystore androidguy-release.keystore -alias androidguy -keyalg RSA -validity 30000
+</pre>
+				<p>所以真正使用的时候是：</p>
+<pre>
+keytool -genkey -v -keystore androidguy-release.keystore -alias androidguy-release.keystore -keyalg RSA -validity 30000
 </pre>
                 <p>
                 (2).以下是作者输入的信息作为参考。
@@ -70,11 +78,7 @@ CN=li, OU=supermap, O=supermap, L=chengdu, ST=sichuan, C=CN 正确吗？
         （如果和 keystore 密码相同，按回车）：  
 [正在存储 androidguy-release.keystore] 
 </pre>
-                <p>
-                (3). 此时再次双击builder.bat文件，此间会要求输入密码，输入你证书的密码即可，得到的就是NewName-release.apk文件，可以用于安装在android系统上
-                </p>
-                <p>显示效果图如下所示：</P> 
-                <div class="pageImage"> <img src="img/3.png" style="width:100%;"></div>            
+                <p>          
                 <h3>2.2更换图标</h3>
                 <p>更改图标的操作十分简单，只需要你将四种分辨率的图标分别放到Custom_ICO文件夹中的四个文件夹中即可。
                <strong>注意图标的名字必须是ic_launcher.png且必须为png格式的图标。</strong>
