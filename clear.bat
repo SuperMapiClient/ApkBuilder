@@ -11,7 +11,7 @@ del SuperPhone\project.properties
 del SuperPhone\proguard-project.txt
 del SuperPhone\local.properties
 del SuperPhone\build.xml
-::删除创建过程中生成的文件
+::删除创建过程中生成文件
 
 cd %curdir%
 del %1-debug-unaligned.apk
