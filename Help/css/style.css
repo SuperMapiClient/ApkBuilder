@@ -55,7 +55,7 @@ p {
 	margin: 0 0 9px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
-	line-height: 18px;
+	line-height: 22px;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
@@ -112,8 +112,8 @@ pre {
 	display: block;
 	padding: 8.5px;
 	margin: 0 0 9px;
-	font-size: 12.025px;
-	line-height: 18px;
+	font-size: 12px;
+	line-height: 20px;
 	word-break: break-all;
 	word-wrap: break-word;
 	white-space: pre;
